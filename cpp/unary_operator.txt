@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 10, a1 = 10;
+    int b = a++; // Post-increment: kaam->update   
+    int c = ++a1; // Pre-increment: update->kaam
+    cout << a <<endl<< b <<endl<< a1 <<endl<<c << endl; // a++ karo ya ++a, a to update hoga, par diffrrence post or pre ka hai. result b or c pe dikhega
+    return 0;
+}
