@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int marks;
+    cout << "enter marks : ";
+    cin >> marks;
+
+    if (marks >= 90)
+    {
+        cout << "A\n";
+    }
+    else if (marks >= 80 && marks < 90)
+    {
+        cout << "B\n";
+    }
+    else
+    {
+        cout << "C\n";
+    }
+
+    return 0;
+}
+// This program takes an integer input for marks and prints the corresponding grade based on the conditions specified               
