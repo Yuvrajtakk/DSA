@@ -61,4 +61,4 @@ int main()
     cout << "The sum of digit of 145 is :" << sumOfDigits(145) << endl;
     cout << "the bCr binomial coefficient for n = 8 and r = 2 is :" << bCr(8, 2) << endl;
     return 0;
-}
+ 
