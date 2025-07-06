@@ -1,45 +1,37 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int i, j, n;
-    cout << "Enter the number of rows: ";
-    cin >> n; // User input for number of rows
+int main() {
+    // Integer type modifiers
+    short int a = 10;           // short
+    unsigned short int b = 20;  // unsigned short
+    unsigned int c = 30;        // unsigned
+    long int d = 40;            // long
+    unsigned long int e = 50;   // unsigned long
+    long long int f = 60;       // long long
+    unsigned long long int g = 70; // unsigned long long
 
-    for (i = 0; i < n; i++)
-    {
-        for(j = 0; j < n - i-1 ; j++)
-        {
-            cout << " "; // Print spaces for right alignment
-        }
-        cout << "*"; // Print the first star
-        if(i != 0){
-            for(j = 0; j < 2*i- 1; j++)
-            {
-                cout << " ";
-            }
-            cout << "*"; // Print the second star for rows other than the first
-        }
-        cout << endl;
-    }
+    // Character type modifiers
+    signed char h = 'A';        // signed char
+    unsigned char i = 'B';      // unsigned char
 
-    for (i = 0; i< n-1; i++)
-    {
-        for(j = 0; j <i+1; j++){
-            cout << " "; // Print spaces for left alignment
-        }
-        cout << "*"; // Print the first star
-        if(i != n-2){
-            for(j = 2*(n-i)-5; j> 0; j--)     
-            {
-                cout << " ";
-            }
-            cout << "*"; // Print the second star for rows other than the last
-        }
-        cout << endl;               
-    }
+    // Floating point type modifiers
+    float j = 1.23f;            // float
+    double k = 4.56;            // double
+    long double l = 7.89L;      // long double
 
+    cout << "short int: " << a << endl;
+    cout << "unsigned short int: " << b << endl;
+    cout << "unsigned int: " << c << endl;
+    cout << "long int: " << d << endl;
+    cout << "unsigned long int: " << e << endl;
+    cout << "long long int: " << f << endl;
+    cout << "unsigned long long int: " << g << endl;
+    cout << "signed char: " << h << endl;
+    cout << "unsigned char: " << i << endl;
+    cout << "float: " << j << endl;
+    cout << "double: " << k << endl;
+    cout << "long double: " << l << endl;
 
-    return 0;   
+    return 0;
 }
