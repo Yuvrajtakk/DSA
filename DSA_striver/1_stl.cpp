@@ -223,8 +223,8 @@
 //     s.erase(it1, it3); //erases from it1 to it3 (not including it3)
 //     cout << "\nIs set empty? " << s.empty(); //0 (false)
 
-//     auto itlow = s.lower_bound(2); //iterator to first element >= 2
-//     auto itup = s.upper_bound(2); //iterator to first element > 2
+//     auto iflow = s.lower_bound(2); //iterator to first element >= 2
+//     auto ifup = s.upper_bound(2); //iterator to first element > 2
 // }
 // void explain_multiset(){ //stores multiple occurrences of elements in sorted order
 //     multiset<int> ms;
@@ -382,7 +382,7 @@
 
 //     int cnt = __builtin_popcount(num); //number of set bits in num (for int)
 //     long long num2 = 10982138293;
-//     int cnt2 = __builtin_popcountll(num2); //number of set bits in num2 (for long long)
+//     int cnt2 = __builtin_popcountl(num2); //number of set bits in num2 (for long long)
 
 //     string str = "12345";
 //     sort (str.begin(), str.end()); //sorts the string in lexicographical order
@@ -630,7 +630,7 @@ void explain_extra()
     int cnt = __builtin_popcount(num);
 
     long long num2 = 10982138293LL;
-    int cnt2 = __builtin_popcountll(num2);
+    int cnt2 = __builtin_popcountl(num2);
 
     string str = "12345";
     sort(str.begin(), str.end());
